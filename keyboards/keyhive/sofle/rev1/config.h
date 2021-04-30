@@ -1,13 +1,11 @@
 #pragma once
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xFC32
-#define PRODUCT_ID      0x0287
+#define VENDOR_ID       0x4B48
+#define PRODUCT_ID      0x0288
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    Keyhive
-#define PRODUCT         Sharon
-#define DESCRIPTION     Rose version of the Sofle
-#define MASTER_RIGHT
+#define PRODUCT         Sofle RGB
 
 /* key matrix size */
 // Rows are doubled-up
@@ -29,11 +27,15 @@
 #define ENCODERS_PAD_B { F4 }
 #define ENCODERS_PAD_A_RIGHT { F4 }
 #define ENCODERS_PAD_B_RIGHT { F5 }
-#define ENCODER_RESOLUTION 2
+#define ENCODER_RESOLUTION 4
 
 #define TAP_CODE_DELAY 10
 
 /* communication between sides */
+#define SPLIT_USB_DETECT
+
+#define USE_SERIAL
+#define SERIAL_USE_MULTI_TRANSACTION
 #define SOFT_SERIAL_PIN D2
 
 #define NO_ACTION_MACRO
